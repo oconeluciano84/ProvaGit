@@ -1,3 +1,10 @@
-language:java
 sudo:false
+language:java
 script:mvn clean verify
+
+notifications:
+  email:
+    recipients:
+    - oconeluciano84@gmail.com
+    on_success: change
+    on_failure: always
