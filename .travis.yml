@@ -1,8 +1,8 @@
 {
   "language": "java",
   "jdk": "oraclejdk9",
+  "before_install": "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V"
   "script": "mvn clean test",
-  "global_env": "CI_DEPLOY_PASSWORD=[secure] CI_DEPLOY_USERNAME=[secure]",
   "group": "stable",
   "dist": "trusty",
   "os": "linux"
