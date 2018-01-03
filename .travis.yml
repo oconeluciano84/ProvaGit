@@ -2,7 +2,7 @@
   "language": "java",
   "jdk": "oraclejdk9",
   "before_install": "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V"
-  "script": "mvn clean",
+  "script": "mvn test -B",
   "group": "stable",
   "dist": "trusty",
   "os": "linux"
