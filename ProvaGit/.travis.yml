@@ -1,9 +1,23 @@
-sudo: false
-language: java
-script: mvn verify
+{
+  "language": "java",
+  "jdk": "oraclejdk9",
+  "before_install": ".travis/before_install.sh",
+  "script": "mvn verify",
+  "after_success": ".travis/after_success.sh",
+  "global_env": "CI_DEPLOY_PASSWORD=[secure] CI_DEPLOY_USERNAME=[secure]",
+  "group": "stable",
+  "dist": "trusty",
+  "os": "linux"
+}
 
-notifications:
- -  email:
- -    recipients: oconeluciano84@gmail.com
- -    on_success: always
- -    on_failure: always
+
+
+#sudo: false
+#language: java
+#script: mvn verify
+
+#notifications:
+ #-  email:
+ #-    recipients: oconeluciano84@gmail.com
+ #-    on_success: always
+ #-    on_failure: always
