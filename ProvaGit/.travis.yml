@@ -1,0 +1,10 @@
+sudo: false
+language: java
+script: mvn verify
+
+notifications:
+ -  email:
+ -    recipients:
+ -    - oconeluciano84@gmail.com
+ -    on_success: always
+ -    on_failure: always
