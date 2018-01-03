@@ -1,7 +1,7 @@
 {
   "language": "java",
   "jdk": "oraclejdk9",
-  "script": "mvn verify",
+  "script": "mvn clean test",
   "global_env": "CI_DEPLOY_PASSWORD=[secure] CI_DEPLOY_USERNAME=[secure]",
   "group": "stable",
   "dist": "trusty",
